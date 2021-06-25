@@ -1,17 +1,23 @@
 import styled from 'styled-components';
+import { Link } from 'react-scroll';
+import { motion } from 'framer-motion';
 
 export const Nav = styled.nav`
   background: #fff;
   height: 100px;
-  z-index: 10;
-  position: sticky;
+  /* margin-top: -100px; */
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  position: sticky;
   top: 0;
+  z-index: 10;
+  @media screen and (max-width: 960px) {
+    transition: 0.8 all ease;
+  }
 `;
 
-export const NavContainer = styled.div`
+export const NavContainer = styled(motion.div)`
   display: flex;
   justify-content: space-between;
   height: 100px;
@@ -21,18 +27,35 @@ export const NavContainer = styled.div`
   z-index: 1;
 `;
 
-export const NavLogoContainer = styled.div`
+export const NavLogoContainer = styled(motion.div)`
   cursor: pointer;
-
   display: flex;
   justify-self: flex-start;
   align-items: center;
 `;
 
+export const MobileIcon = styled.div`
+  display: none;
+  @media screen and (max-width: 768px) {
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 0;
+    transform: translate(-100%, 60%);
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: #5bbc2e;
+  }
+`;
+
 export const NavLogo = styled.img`
-  width: 162px;
-  height: 76px;
+  width: 108px;
+  height: 48px;
   margin-left: 24px;
+  @media screen and (max-width: 960px) {
+    width: 90px;
+    height: 40px;
+  }
 `;
 
 export const NavMenu = styled.ul`
@@ -41,25 +64,38 @@ export const NavMenu = styled.ul`
   align-items: center;
   text-align: center;
   margin-right: -22px;
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
 `;
 export const NavItems = styled.li`
   height: 100px;
 `;
-export const NavLinks = styled.div`
+
+export const NavMotion = styled(motion.div)`
   display: flex;
   align-items: center;
-  text-decoration: none;
   padding: 0 1rem;
   height: 100%;
+`;
+export const NavLinks = styled(Link)`
+  text-decoration: none;
   cursor: pointer;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 700;
   font-family: 'PT Sans';
+
+  &.active {
+    border-bottom: 3px solid #5bbc2e;
+  }
 `;
 
-export const NavBtn = styled.nav`
+export const NavBtn = styled(motion.nav)`
   display: flex;
   align-items: center;
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
 `;
 
 export const NavBtnLink = styled.div`
@@ -76,4 +112,9 @@ export const NavBtnLink = styled.div`
   text-decoration: none;
   margin: 0 10px;
   font-family: 'PT Sans';
+  &:hover {
+    transition: all 0.5s ease-in-out;
+    background: #182f59;
+    color: #fff;
+  }
 `;
