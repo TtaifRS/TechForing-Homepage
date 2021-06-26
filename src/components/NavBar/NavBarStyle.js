@@ -3,7 +3,7 @@ import { Link } from 'react-scroll';
 import { motion } from 'framer-motion';
 
 export const Nav = styled.nav`
-  background: rgba(255, 255, 255, 1);
+  background: #fff;
   height: 80px;
   margin-top: -80px;
   display: flex;

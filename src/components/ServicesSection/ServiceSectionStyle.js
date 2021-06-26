@@ -2,8 +2,9 @@ import styled from 'styled-components';
 
 export const ServiceContainer = styled.div`
   overflow: hidden;
-  margin-top: 40px;
-  position: absolute;
+  margin-top: -5px;
+  position: relative;
+  z-index: 1;
   @media screen and (max-width: 768px) {
     width: 100%;
   }
@@ -56,7 +57,6 @@ export const ServiceH4 = styled.p`
   margin-bottom: 40px;
   font-size: 18px;
   font-weight: 600;
-  text-align: center;
 `;
 export const ServiceUl = styled.ul`
   list-style: 'none';

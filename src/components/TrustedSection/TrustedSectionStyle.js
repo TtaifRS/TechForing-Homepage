@@ -4,7 +4,7 @@ export const LogoContainer = styled.div`
   width: 100%;
   position: relative;
   overflow: hidden;
-
+  margin-bottom: 64px;
   @media screen and (max-width: 768px) {
     overflow: hidden;
   }

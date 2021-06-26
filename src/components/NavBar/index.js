@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { FaBars } from 'react-icons/fa';
 
+import { animateScroll as scroll } from 'react-scroll';
 import {
   Nav,
   NavContainer,
@@ -73,16 +74,35 @@ const linkVariants = {
 };
 
 const Navbar = () => {
+  const [scrollNav, setScrollNave] = useState(false);
+  const changeNav = () => {
+    if (window.scrollY >= 80) {
+      setScrollNave(true);
+    } else {
+      setScrollNave(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', changeNav);
+  }, []);
+
+  const toggleHome = () => {
+    scroll.scrollToTop();
+  };
   return (
     <>
-      <Nav>
+      <Nav scrollNav={scrollNav}>
         <NavContainer
           variants={containerVariants}
           initial="hidden"
           animate="visible"
           exit="exit"
         >
-          <NavLogoContainer variants={logoContainerVariants}>
+          <NavLogoContainer
+            variants={logoContainerVariants}
+            onClick={toggleHome}
+          >
             <NavLogo
               src="https://techforing.com/tfimg/logo.png"
               alt="techforing-logo"
