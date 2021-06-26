@@ -40,11 +40,10 @@ const HeroBox = () => {
 
         <HeroBtnWrapper>
           <Button
-            to="signup"
             onMouseEnter={onHover}
             onMouseLeave={onHover}
-            primary="true"
-            dark="true"
+            primary={true}
+            dark={true}
           >
             Free Scan {hover ? <ArrowForward /> : <ArrowRight />}
           </Button>

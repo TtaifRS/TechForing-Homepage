@@ -17,8 +17,8 @@ import {
 
 const navLinks = [
   { name: 'Services', to: 'services' },
-  { name: 'Pricing', to: 'pricing' },
   { name: 'Features', to: 'features' },
+  { name: 'Pricing', to: 'pricing' },
   { name: 'Resources', to: 'resources' },
 ];
 
