@@ -3,9 +3,9 @@ import { Link } from 'react-scroll';
 import { motion } from 'framer-motion';
 
 export const Nav = styled.nav`
-  background: #fff;
-  height: 100px;
-  /* margin-top: -100px; */
+  background: rgba(255, 255, 255, 0.7);
+  height: 80px;
+  margin-top: -80px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -20,7 +20,7 @@ export const Nav = styled.nav`
 export const NavContainer = styled(motion.div)`
   display: flex;
   justify-content: space-between;
-  height: 100px;
+  height: 80px;
   width: 100%;
   padding: 0 24px;
   max-width: 1100px;
@@ -69,7 +69,7 @@ export const NavMenu = styled.ul`
   }
 `;
 export const NavItems = styled.li`
-  height: 100px;
+  height: 80px;
 `;
 
 export const NavMotion = styled(motion.div)`
