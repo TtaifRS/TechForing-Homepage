@@ -1,22 +1,17 @@
 import React from 'react';
 import {
   LogoContainer,
-  LogoTextContainer,
-  LogoSpan,
-  LogoH3,
   LogoPngContainer,
   LogoPngDiv,
   LogoImg,
 } from './TrustedSectionStyle';
 import { Logos } from './logoImport';
+import TextH3 from '../TextH3';
 
 const TrustedSection = () => {
   return (
     <LogoContainer>
-      <LogoTextContainer>
-        <LogoH3 className="">TRUSTED BY IT & TELECOM COMPANIES LIKE</LogoH3>
-        <LogoSpan></LogoSpan>
-      </LogoTextContainer>
+      <TextH3 text="TRUSTED BY IT & TELECOM COMPANIES LIKE" />
       <LogoPngContainer className="">
         {Logos.map((logo, index) => {
           const { src, alt } = logo;
