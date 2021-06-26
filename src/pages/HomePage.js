@@ -1,16 +1,15 @@
 import React from 'react';
-import { Container } from 'react-bootstrap';
 
 import Navbar from '../components/NavBar';
 import HeroBox from '../components/HeroBox';
+import TrustedSection from '../components/TrustedSection';
 
 const HomePage = () => {
   return (
     <div>
-      <Container>
-        <Navbar />
-        <HeroBox />
-      </Container>
+      <Navbar />
+      <HeroBox />
+      <TrustedSection />
     </div>
   );
 };
