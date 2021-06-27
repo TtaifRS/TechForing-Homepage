@@ -5,6 +5,7 @@ import HeroBox from '../components/HeroBox';
 import TrustedSection from '../components/TrustedSection';
 import ServicesSection from '../components/ServicesSection';
 import FeaturerSection from '../components/FeatureSection';
+
 const HomePage = () => {
   return (
     <div>

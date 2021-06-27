@@ -19,10 +19,13 @@ export const FeatureP = styled.p`
   display: flex;
   position: relative;
   margin-bottom: 20px;
+  left: 80px;
   @media screen and (max-width: 768px) {
     margin-top: 40px;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 1.5;
+    left: 10%;
+    margin-bottom: 0;
   }
 `;
 export const FeatureInfoContainer = styled.div`
@@ -89,7 +92,8 @@ export const FeatureImg = styled.img`
   @media screen and (max-width: 768px) {
     width: 350px;
     float: none;
-    margin-left: 0 auto;
+    position: relative;
+    left: 5px;
   }
 `;
 export const FeatureBtnWrapper = styled.div`
@@ -97,4 +101,39 @@ export const FeatureBtnWrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+`;
+
+export const FTestimonialContainer = styled.div`
+  margin-top: 24px;
+`;
+export const FTestimonialSection = styled.div`
+  margin: 0 auto;
+  display: flex;
+  width: 80%;
+  position: relative;
+  justify-content: space-around;
+  overflow: hidden;
+  @media screen and (max-width: 768px) {
+    display: grid;
+    width: 100%;
+    padding: 0 5px;
+  }
+`;
+export const LeftContainer = styled.div`
+  position: relative;
+  top: 70px;
+  @media screen and (max-width: 768px) {
+    width: 100%;
+    font-size: 17px;
+    margin-bottom: 70px;
+  }
+`;
+export const RightContainer = styled.div`
+  height: 550px;
+  position: relative;
+  top: 70px;
+  @media screen and (max-width: 768px) {
+    width: 100%;
+    font-size: 17px;
+  }
 `;

@@ -24,6 +24,10 @@ export const FeatureBoxContainer = styled.div`
   @media screen and (max-width: 768px) {
     margin: 0 auto;
   }
+  @media screen and (max-width: 768px) {
+    flex: 1;
+    margin: 20px;
+  }
 `;
 
 export const FeatureBoxIcon = styled.img`
