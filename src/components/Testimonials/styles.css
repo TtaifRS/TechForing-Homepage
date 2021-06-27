@@ -11,7 +11,7 @@ article {
   margin: 0.5rem;
   /* transition for the transform property, updated in the script */
   transition: transform 0.2s ease-out;
-  box-shadow: 0 0 5px -2px hotpink;
+  box-shadow: 0 0 5px -2px #182f59;
 }
 
 @media screen and (max-width: 768px) {

@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import TextH3 from '../TextH3';
 import { Button } from '../ButtonStyle';
 import ServiceDetailesComponent from '../ServiceDetailesComponent';
-
+import { FiberManualRecord } from '@material-ui/icons';
 import {
   ServiceContainer,
   ServiceTitleContainer,
@@ -21,6 +21,8 @@ import {
   DetailesLeft,
   DetailesRight,
 } from './ServiceSectionStyle';
+
+import ServiceBox from '../ServiceBox';
 
 import servicesImg from '../../assets/infoImages/services.png';
 
@@ -67,14 +69,23 @@ const ServicesSection = () => {
           </ServiceH4>
           <ServiceUl>
             <ServiceLi>
+              <FiberManualRecord
+                style={{ color: '#182f59', marginRight: '5px' }}
+              />
               The report starts with a quick summary of the findings and risk
               ratings
             </ServiceLi>
             <ServiceLi>
+              <FiberManualRecord
+                style={{ color: '#182f59', marginRight: '5px' }}
+              />
               Each finding has a detailed explanation in terms of risk and
               recommendations
             </ServiceLi>
             <ServiceLi>
+              <FiberManualRecord
+                style={{ color: '#182f59', marginRight: '5px' }}
+              />
               The vulnerabilities are ordered by the risk level
             </ServiceLi>
           </ServiceUl>
@@ -120,6 +131,7 @@ const ServicesSection = () => {
           </DetailesRight>
         </DetailesContainer>
       </ServiceDetailes>
+      <ServiceBox />
     </ServiceContainer>
   );
 };

@@ -69,6 +69,7 @@ export const ServiceLi = styled.li`
   margin-bottom: 20px;
   font-size: 17px;
   font-family: 'Pt Sans';
+  display: flex;
   @media screen and (max-width: 768px) {
     width: 100%;
     font-size: 17px;
