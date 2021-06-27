@@ -1,0 +1,142 @@
+.containarMain {
+  width: 80%;
+  display: flex;
+  margin: 0 auto;
+  position: relative;
+  align-items: center;
+  justify-content: space-between;
+}
+.listing-item {
+  display: block;
+  width: 100%;
+  margin: 0 20px 20px 20px;
+  padding: 5px;
+
+  float: left;
+  background: #fff;
+  border-radius: 10px;
+  z-index: 0;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  -webkit-box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
+}
+.listing-item:hover,
+.listing-item.active {
+  -webkit-transform: scale(1.03);
+  -moz-transform: scale(1.03);
+  transform: scale(1.03);
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+  z-index: 2;
+}
+.listing-item .listing {
+  padding: 20px;
+  position: relative;
+}
+.listing-item .listing:before {
+  content: '';
+  position: absolute;
+  top: -15px;
+  left: -o-calc(50% - 15px);
+  left: -moz-calc(50% - 15px);
+  left: -webkit-calc(50% - 15px);
+  left: calc(50% - 15px);
+  border-bottom: 20px solid #fff;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+}
+figure.image img {
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+figure.image {
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+figure.image figcaption {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  text-align: center;
+  bottom: 0;
+  background: rgba(49, 47, 47, 0.6);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+figcaption .caption {
+  position: relative;
+
+  top: 50%;
+  -moz-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.listing {
+  display: flex;
+  margin: 0 auto;
+}
+.icon {
+  font-size: 20px !important;
+  margin-right: 10px;
+  color: green;
+}
+
+.iconTwo {
+  font-size: 20px !important;
+  margin-right: 10px;
+  color: red;
+}
+figcaption h1 {
+  color: white;
+  font-weight: 900;
+  font-size: 28px;
+  text-transform: uppercase;
+}
+figcaption .user {
+  color: #5bbc2e;
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0 0 10px 0;
+}
+
+figcaption .cost {
+  margin: 0;
+  color: white;
+}
+
+.listing h4 {
+  font-size: 13px;
+  text-align: center;
+  padding: 5px 10px;
+  font-weight: bold;
+}
+.listing h4:not(:last-child) {
+  border-bottom: 1px solid #ccc;
+}
+.listing-item:hover figure.image figcaption {
+  background: rgba(0, 0, 0, 0.6);
+}
+@media only screen and (max-width: 768px) {
+  .containarMain {
+    display: grid;
+  }
+  .listing-item {
+    display: block;
+    width: -webkit-calc(100%/3);
+    width: -moz-calc(100%/3);
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .hover-table-layout {
+    padding: 30px;
+  }
+}
