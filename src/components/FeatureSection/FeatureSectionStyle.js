@@ -1,33 +1,31 @@
 import styled from 'styled-components';
 
-export const ServiceContainer = styled.div`
+export const FeatureContainer = styled.div`
   overflow: hidden;
   margin-top: -5px;
   position: relative;
   z-index: 1;
-  margin-bottom: 64px;
   @media screen and (max-width: 768px) {
     width: 100%;
   }
 `;
-export const ServiceTitleContainer = styled.div`
+export const FeatureTitleContainer = styled.div`
   margin-bottom: 80px;
 `;
-export const ServiceP = styled.p`
+export const FeatureP = styled.p`
   font-family: 'PT sans';
-  width: 80%;
-  position: relative;
+  font-weight: 600;
+  width: 100%;
   display: flex;
-  align-items: center;
-  text-align: center;
-  margin: 0 auto;
+  position: relative;
+  margin-bottom: 20px;
   @media screen and (max-width: 768px) {
-    margin-top: 20px;
+    margin-top: 40px;
     font-size: 14px;
     line-height: 1.5;
   }
 `;
-export const ServiceInfoContainer = styled.div`
+export const FeatureInfoContainer = styled.div`
   margin: 0 auto;
   display: flex;
   width: 80%;
@@ -40,7 +38,7 @@ export const ServiceInfoContainer = styled.div`
     padding: 0 5px;
   }
 `;
-export const ServiceLeftContainer = styled.div`
+export const FeatureLeftContainer = styled.div`
   height: 400px;
   position: relative;
   margin: auto 0;
@@ -48,24 +46,26 @@ export const ServiceLeftContainer = styled.div`
     height: 100%;
   }
 `;
-export const ServiceH3 = styled.h3`
+export const FeatureH3 = styled.h3`
   font-weight: 900;
   font-size: 22px;
   margin-bottom: 40px;
 `;
-export const ServiceH4 = styled.p`
+export const FeatureH4 = styled.p`
   font-family: 'Pt Sans';
   margin-bottom: 40px;
   font-size: 18px;
   font-weight: 600;
 `;
-export const ServiceUl = styled.ul`
-  list-style: 'none';
+export const FeaturesBoxContainer = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   @media screen and (max-width: 768px) {
     list-style: none;
   }
 `;
-export const ServiceLi = styled.li`
+export const FeatureLi = styled.li`
   margin-bottom: 20px;
   font-size: 17px;
   font-family: 'Pt Sans';
@@ -74,15 +74,16 @@ export const ServiceLi = styled.li`
     font-size: 17px;
   }
 `;
-export const ServiceRightContainer = styled.div`
+export const FeatureRightContainer = styled.div`
   width: 100%;
 
   @media screen and (max-width: 768px) {
     margin-left: 0;
   }
 `;
-export const ServiceImg = styled.img`
-  float: right;
+export const FeatureImg = styled.img`
+  width: 80%;
+  float: left;
   -webkit-box-shadow: 3px 3px 4px 0px #000000;
   box-shadow: 3px 3px 4px 0px #000000;
   @media screen and (max-width: 768px) {
@@ -91,7 +92,7 @@ export const ServiceImg = styled.img`
     margin-left: 0 auto;
   }
 `;
-export const ServiceBtnWrapper = styled.div`
+export const FeatureBtnWrapper = styled.div`
   margin-top: 32px;
   display: flex;
   flex-direction: column;
