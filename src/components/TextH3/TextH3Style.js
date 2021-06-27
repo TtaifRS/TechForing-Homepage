@@ -30,6 +30,7 @@ export const TextTitle = styled.h3`
   font-weight: 400;
   position: relative;
   text-align: center;
+  text-transform: uppercase;
   justify-content: center;
   @media screen and (max-width: 768px) {
     font-size: 24px;

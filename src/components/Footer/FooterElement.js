@@ -55,6 +55,7 @@ export const FooterLinkTitle = styled.h1`
   font-size: 14px;
   margin-bottom: 16px;
   text-transform: uppercase;
+  text-align: start;
 `;
 
 export const FooterLink = styled(LinkS)`

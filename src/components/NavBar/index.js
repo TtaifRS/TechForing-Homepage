@@ -73,7 +73,7 @@ const linkVariants = {
   },
 };
 
-const Navbar = () => {
+const Navbar = ({ toggle }) => {
   const [scrollNav, setScrollNave] = useState(false);
   const changeNav = () => {
     if (window.scrollY >= 80) {
@@ -108,7 +108,7 @@ const Navbar = () => {
               alt="techforing-logo"
             />
           </NavLogoContainer>
-          <MobileIcon>
+          <MobileIcon onClick={toggle}>
             <FaBars />
           </MobileIcon>
           <NavMenu>

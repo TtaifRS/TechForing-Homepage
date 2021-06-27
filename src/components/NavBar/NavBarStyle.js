@@ -70,6 +70,7 @@ export const NavMenu = styled.ul`
 `;
 export const NavItems = styled.li`
   height: 80px;
+  color: Black;
 `;
 
 export const NavMotion = styled(motion.div)`

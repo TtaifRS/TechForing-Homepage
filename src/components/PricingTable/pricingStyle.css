@@ -126,6 +126,7 @@ figcaption .cost {
 @media only screen and (max-width: 768px) {
   .containarMain {
     display: grid;
+    grid-gap: 30px;
   }
   .listing-item {
     display: block;
