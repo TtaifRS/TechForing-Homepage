@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import TextH3 from '../TextH3';
 import { Button } from '../ButtonStyle';
+import ServiceDetailesComponent from '../ServiceDetailesComponent';
 
 import {
   ServiceContainer,
@@ -15,9 +16,18 @@ import {
   ServiceRightContainer,
   ServiceImg,
   ServiceBtnWrapper,
+  ServiceDetailes,
+  DetailesContainer,
+  DetailesLeft,
+  DetailesRight,
 } from './ServiceSectionStyle';
 
 import servicesImg from '../../assets/infoImages/services.png';
+
+import service1 from '../../assets/icons/service-1.png';
+import service2 from '../../assets/icons/service-2.png';
+import service3 from '../../assets/icons/service-3.png';
+import service4 from '../../assets/icons/service-4.png';
 
 const ServicesSection = () => {
   const [hover, setHover] = useState(false);
@@ -73,6 +83,43 @@ const ServicesSection = () => {
           <ServiceImg src={servicesImg} alt="services" />
         </ServiceRightContainer>
       </ServiceInfoContainer>
+      <ServiceDetailes>
+        <TextH3 text="WHAT THIRDEYE LOOKS FOR ON YOUR SITE" />
+        <DetailesContainer>
+          <DetailesLeft>
+            <ServiceDetailesComponent
+              title="Self-Security Assessment"
+              subText="You can perform a self-security assessment in order to
+              detect weaknesses in your own application. This will 
+              allow you to fix the vulnerabilities before being hit by 
+              real attackers."
+              src={service1}
+            />
+            <ServiceDetailesComponent
+              title="Comprehensive Vulnerability Discovery"
+              subText="Detect a wide range of network service and web 
+              application vulnerabilities across any Internet
+              facing system."
+              src={service3}
+            />
+          </DetailesLeft>
+          <DetailesRight>
+            <ServiceDetailesComponent
+              title="Ongoing Vulnerability Management"
+              subText="Schedule scans for weekly or monthly reports. 
+              Configure report to alert on changes to vulnerability 
+              count."
+              src={service2}
+            />
+            <ServiceDetailesComponent
+              title="Real Time Risk Visibility"
+              subText="Detailed reports that include vulnerability severity 
+              with technical details of immediate value to the user."
+              src={service4}
+            />
+          </DetailesRight>
+        </DetailesContainer>
+      </ServiceDetailes>
     </ServiceContainer>
   );
 };

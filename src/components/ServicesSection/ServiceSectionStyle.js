@@ -97,3 +97,36 @@ export const ServiceBtnWrapper = styled.div`
   flex-direction: column;
   align-items: center;
 `;
+
+export const ServiceDetailes = styled.div`
+  margin: 24px;
+`;
+
+export const DetailesContainer = styled.div`
+  margin: 0 auto;
+  display: flex;
+  width: 80%;
+  position: relative;
+  justify-content: space-between;
+  overflow: hidden;
+  @media screen and (max-width: 768px) {
+    display: grid;
+    width: 100%;
+    padding: 0 5px;
+  }
+`;
+export const DetailesLeft = styled.div`
+  flex: 1;
+  position: relative;
+  margin: 20px;
+  @media screen and (max-width: 768px) {
+    margin: 0;
+  }
+`;
+export const DetailesRight = styled.div`
+  flex: 1;
+  margin: 20px;
+  @media screen and (max-width: 768px) {
+    margin: 0;
+  }
+`;
