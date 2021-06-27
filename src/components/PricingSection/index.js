@@ -8,7 +8,7 @@ import { PricingTableContainer } from './PricingStyle';
 
 const PricingSection = () => {
   return (
-    <div id="pricing" style={{ overflowY: 'hidden' }}>
+    <div id="pricing" style={{ overflow: 'hidden' }}>
       <TextH3 text="Pricing" />
       <PricingTableContainer>
         <PricingTable />

@@ -6,7 +6,7 @@ import TrustedSection from '../components/TrustedSection';
 import ServicesSection from '../components/ServicesSection';
 import FeaturerSection from '../components/FeatureSection';
 import PricingSection from '../components/PricingSection';
-
+import Footer from '../components/Footer';
 const HomePage = () => {
   return (
     <div>
@@ -16,6 +16,7 @@ const HomePage = () => {
       <ServicesSection />
       <FeaturerSection />
       <PricingSection />
+      <Footer />
     </div>
   );
 };
