@@ -1,6 +1,5 @@
 import React from 'react';
 
-import TextH3 from '../TextH3';
 import { Button } from '../ButtonStyle';
 
 import {

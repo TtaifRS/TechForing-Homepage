@@ -16,8 +16,8 @@ const TrustedSection = () => {
         {Logos.map((logo, index) => {
           const { src, alt } = logo;
           return (
-            <LogoPngDiv>
-              <LogoImg key={index} src={src} alt={alt} />
+            <LogoPngDiv key={index}>
+              <LogoImg src={src} alt={alt} />
             </LogoPngDiv>
           );
         })}

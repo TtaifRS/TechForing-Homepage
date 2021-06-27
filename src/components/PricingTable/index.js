@@ -13,7 +13,7 @@ const PricingTable = ({ src, name, amount, user, benefits }) => {
           {tableDatas.map((data, index) => {
             const { packageName, user, cost, benefits } = data;
             return (
-              <div className="listing-item">
+              <div className="listing-item" key={index}>
                 <figure className="image">
                   <img
                     src="https://images.unsplash.com/photo-1534951009808-766178b47a4f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
@@ -30,7 +30,7 @@ const PricingTable = ({ src, name, amount, user, benefits }) => {
                 {benefits.map((data, index) => {
                   const { name, icon } = data;
                   return (
-                    <div className="listing">
+                    <div className="listing" key={index}>
                       {icon ? (
                         <Done className="icon" />
                       ) : (

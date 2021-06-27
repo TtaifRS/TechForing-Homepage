@@ -2,17 +2,17 @@ import React from 'react';
 import './style.css';
 const ResourceCard = ({ title, src, text }) => {
   return (
-    <div class="main">
+    <div className="main">
       <h1>{title}</h1>
-      <ul class="cards">
-        <li class="cards_item">
-          <div class="card">
-            <div class="card_image">
-              <img src={src} />
+      <ul className="cards">
+        <li className="cards_item">
+          <div className="card">
+            <div className="card_image">
+              <img src={src} alt={title} />
             </div>
-            <div class="card_content">
-              <p class="card_text">{text}</p>
-              <button class="btn card_btn">Read More</button>
+            <div className="card_content">
+              <p className="card_text">{text}</p>
+              <button className="btn card_btn">Read More</button>
             </div>
           </div>
         </li>

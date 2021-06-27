@@ -21,7 +21,7 @@ const ServiceBox = () => {
         {boxDatas.map((data, index) => {
           const { src, numberValue, spanValue, sub } = data;
           return (
-            <BoxItemContainer>
+            <BoxItemContainer key={index}>
               <BoxItem>
                 <BoxPng src={src} alt={sub} />
                 <BoxTextContainer>
