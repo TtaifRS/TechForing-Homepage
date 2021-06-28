@@ -6,9 +6,11 @@ export const AdContainer = styled.div`
   background: #182f59;
   display: flex;
   justify-content: space-between;
+  overflow: hidden;
   @media screen and (max-width: 480px) {
     height: 600px;
     margin-bottom: 32px;
+    overflow: hidden;
   }
 `;
 export const MainContainer = styled.div`

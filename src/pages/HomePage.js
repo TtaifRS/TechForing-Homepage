@@ -16,9 +16,9 @@ const HomePage = () => {
   const toggle = () => {
     setIsOpen(!isOpen);
   };
-  console.log(isOpen);
+
   return (
-    <div style={{ overflow: 'hidden' }}>
+    <div>
       <Sidebar isOpen={isOpen} toggle={toggle} />
       <Navbar toggle={toggle} />
       <HeroBox />

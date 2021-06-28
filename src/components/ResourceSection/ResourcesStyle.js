@@ -1,6 +1,11 @@
 import styled from 'styled-components';
 
-export const ResourcesContainer = styled.div``;
+export const ResourcesContainer = styled.div`
+  overflow: hidden;
+  @media screen and (max-width: 768px) {
+    overflow: hidden;
+  }
+`;
 
 export const CardContainer = styled.div`
   display: flex;

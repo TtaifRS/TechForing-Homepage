@@ -3,12 +3,17 @@ import { Done, Close } from '@material-ui/icons';
 
 import './pricingStyle.css';
 
+import { Button } from '../ButtonStyle';
+
 import { tableDatas } from './tableDatas';
 
 const PricingTable = ({ src, name, amount, user, benefits }) => {
   return (
     <>
-      <div className="widthContainer" style={{ width: '100vw' }}>
+      <div
+        className="widthContainer"
+        style={{ width: '100vw', margin: '10px' }}
+      >
         <div className="containarMain">
           {tableDatas.map((data, index) => {
             const { packageName, user, cost, benefits } = data;
@@ -40,6 +45,9 @@ const PricingTable = ({ src, name, amount, user, benefits }) => {
                     </div>
                   );
                 })}
+                <div className="" style={{ width: '50%', margin: '10px auto' }}>
+                  <Button primary>Sign Up</Button>
+                </div>
               </div>
             );
           })}
